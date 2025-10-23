@@ -1089,6 +1089,7 @@ body {
   position: relative;
   background: url("images/gallery.jpg") center/cover no-repeat; 
   width: 100%; 
+  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1497,9 +1498,7 @@ ol ul {
   .nav-links {
     position: fixed; 
     top: 0;
-
     right: -100vw; 
-
     height: 100vh; 
     width: 70%; 
     max-width: 300px;
@@ -1532,23 +1531,22 @@ ol ul {
     right: 20px;
   }
 
-  .dropdown {
+ .dropdown {
     width: 100%;
     padding: 0;
     height: auto;
     flex-direction: column;
     align-items: flex-start;
-  }
+}
 
-  .dropdown .dropbtn {
+.dropdown .dropbtn {
     width: 100%;
     padding: 15px 25px;
     border-bottom: none;
-  }
+}
 
 
-  .dropdown-content {
-
+.dropdown-content {
     grid-template-columns: 1fr;
     display: none; 
     position: static; 
@@ -1560,33 +1558,30 @@ ol ul {
     box-shadow: none;
     border-radius: 0;
     padding: 0;
-  }
+    max-height: 60vh; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     padding-left: 40px; 
     margin: 0;
     border-radius: 0;
     border-bottom: 1px solid #f1f1f1;
-  }
+}
 
-  .dropdown-content a:last-child {
+.dropdown-content a:last-child {
     border-bottom: none;
-  }
+}
 
 
-  .dropdown:hover .dropdown-content {
-
-    display: none;
-  }
-  .dropdown.open .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: grid;
-  }
-  .dropdown.open .dropbtn i {
+}
+
+.dropdown:hover .dropbtn i {
     transform: rotate(180deg);
-  }
-
-
-  
+}
 
   .navbar .container {
     justify-content: space-between;
