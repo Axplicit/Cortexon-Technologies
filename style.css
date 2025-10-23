@@ -1439,7 +1439,7 @@ ol ul {
   list-style-position: inside;
 }
 /* Responsive */
-@media (min-width: 350px) and (max-width: 1250px) {
+@media (min-width: 300px) and (max-width: 1250px) {
   .top-bar {
     font-size: 8px;
     padding: 13px 0;
@@ -2017,4 +2017,5 @@ ol ul {
     margin-top: 0;
   }
 }
+
 
